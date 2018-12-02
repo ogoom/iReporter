@@ -1,0 +1,17 @@
+#allRecords ul li {
+    border-bottom: 1px dashed lightgray;
+    background-color: cadetblue;
+  }
+  
+  #allRecords ul li a {
+    padding: 8px 20px 8px 20px;
+    color: white;
+    display: block;
+  }
+  
+  #allRecords ul li a:hover {
+    background-color: lightgreen;
+    transition: 0.5s;
+    padding-left: 30px;
+    padding-right: 10px;
+  }
