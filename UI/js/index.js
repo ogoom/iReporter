@@ -1,3 +1,14 @@
-document.querySelector(".img__btn").addEventListener("click", function() {
-	document.querySelector(".container").classList.toggle("s--signup");
-});
+
+
+const toggleResponsive = ()=>{
+	let myDiv = document.getElementById("myNavbar");
+	if (myDiv.className === "navbar") {
+		myDiv.className += " responsive";
+	} else {
+		myDiv.className = "navbar";
+	}
+	return;
+};
+
+
+
