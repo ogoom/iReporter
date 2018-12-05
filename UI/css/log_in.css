@@ -15,7 +15,13 @@
     background: none;
     font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   }
-  
+  a {
+      text-decoration: none;
+  }
+  input[type=text]:focus, input[type=password]:focus  input[type=email]:focus{
+    background-color: #ddd;
+    outline: none;
+  }
   .tip {
     font-size: 20px;
     margin: 40px auto 50px;
@@ -35,23 +41,9 @@
     position: relative;
     width: 640px;
     height: 100%;
-    transition: -webkit-transform 1.2s ease-in-out;
-    transition: transform 1.2s ease-in-out;
-    transition: transform 1.2s ease-in-out, -webkit-transform 1.2s ease-in-out;
     padding: 50px 30px 0;
   }
   
-  .sub-cont {
-    overflow: hidden;
-    position: absolute;
-    left: 640px;
-    top: 0;
-    width: 900px;
-    height: 100%;
-    padding-left: 260px;
-    background: #fff;
-    
-  }
   
   button {
     display: block;
@@ -80,7 +72,7 @@
   }
   label span {
     font-size: 12px;
-    color: #cfcfcf;
+    color: #3a3939;
     text-transform: uppercase;
   }
   
@@ -93,19 +85,39 @@
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     text-align: center;
   }
+  .checkbox{
+      display: inline;
+  }
+ #checkbox{
+    display: inline;
+  }
   
   .forgot-pass {
     margin-top: 15px;
     text-align: center;
     font-size: 12px;
-    color: #cfcfcf;
+    color: #496aff;
+  }
+  .signup {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: #496aff;
   }
   
   .submit {
     margin-top: 40px;
     margin-bottom: 20px;
-    background: #d4af7a;
+    background: #2cd116;
     text-transform: uppercase;
+  }
+  .cancelbtn{
+    padding: 0.2em 0.4em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    background: #555;
+    text-transform: uppercase;
+    
   }
   
   @media screen and (max-width: 600px) {
@@ -124,9 +136,7 @@
         width: 100%;
         height: 100%;
     }
-    .cancelbtn {
-        width: 100%;
-    }
+    
     .navbar a:not(:first-child) {display: none;}
   .navbar a.icon {
     float: right;
