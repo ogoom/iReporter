@@ -6,24 +6,25 @@ body{
 
 /* Full-width input fields */
   input[type=text] {
-  width: 100%;
+  width: 50%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  margin: 5px 0 10px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
+  
 }
 input[type=number]{
-  width: 100%;
+  width: 50%;
   padding: 15px;
-  margin: 5px 0 22px 0;
+  margin: 5px 0 10px 0;
   display: inline-block;
   border: none;
   background: #f1f1f1;
 }
-input[type=radio]{
-  margin: 10px 0 22px 10px;
-  display: inline-block;
+label {
+    display: inline-block;
+    width: 15%;
 }
 
 input[type=text]:focus input[type=number]:focus{
@@ -32,8 +33,8 @@ input[type=text]:focus input[type=number]:focus{
 }
 textarea {
   resize: none;
-  width: 100%;
-  height: 60px;
+  width: 90%;
+  height: 80px;
 }
 
 hr {
@@ -77,9 +78,13 @@ button:hover {
 }
 .cancelbtn {
   padding: 14px 20px;
-  background-color: #f44336;
+  background-color: #504948;
 }
-
+select {
+    font-size: 16px;
+    width: 50%;
+    margin-bottom: 15px;
+}
 /* Float cancel and signup buttons and add an equal width */
 .cancelbtn, .save {
   float: left;
@@ -104,10 +109,7 @@ button:hover {
 }
 
 @media screen and (max-width: 600px) {
-  span.psw {
-      display: block;
-      float: none;
-  }
+  
   .container {
       width: 100%;
       height: 100%;
@@ -122,7 +124,21 @@ button:hover {
   textarea {
     width: 100%;
   }
-  
+  select {
+      width: 100%;
+  }
+  input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 10px 0;
+    display: block;
+    border: none;
+    background: #f1f1f1;
+  }
+  label {
+      display: block;
+      width: 100%;
+  }
   .navbar a:not(:first-child) {display: none;}
 .navbar a.icon {
   float: right;

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/v4-shims.css">
+    <link rel="stylesheet" href="../css/view.css">
+    <title>Admin Page</title>
+</head>
+
+<body>
+    <div class="navbar" id="myNavbar">
+        <div>
+
+        </div>
+        <div>
+            <a href="../../index.html"><i class="fas fa-home"></i> Home</a>
+            <a href="#"><i class="fas fa-sign-out-alt"></i> Logout</a>
+            <a class="active" href="#"><i class="fas fa-eye"></i> View Record</a>
+            <a href="javascript:void(0);" class="icon" onclick="toggleResponsive()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Admin Page</h1>
+
+        <p>Record View</p>
+        <div>
+            <form action="" style="border:1px solid #ccc">
+                <div class="container">
+                    <p></p>
+                    <hr>
+                    <label for="author"><b>Author</b></label>
+                    <input type="text" name="author" value="Ibinabor Johnson" readonly><br>
+                    <label for="type"><b>Type</b></label>
+                    <input type="text" name="type" value="Intervention" readonly><br>
+                    <label for="title"><b>Title</b></label>
+                    <input type="text" name="title" value="Big pothole at Ajah Road" readonly><br>
+
+                    <label for="decription"><b>Description</b></label><br>
+                    <textarea name="description" readonly>Donec id laoreet ligula. Fusce diam augue, aliquet sit amet maximus at, aliquet eget quam. Nunc pretium consequat est, sodales ornare orci. Proin pretium non nisl at euismod. Integer rhoncus ex eu justo venenatis laoreet. In auctor, nibh at placerat congue, ex augue convallis erat, porta malesuada ex justo non eros. Mauris finibus in leo in cursus.</textarea>
+                    <div class=" geotag" id="geoInputs">
+                        <label for="longitude"><b>Longitude</b></label>
+                        <input type="number" value="" name="longitude" id="longitude" readonly><br>
+                        <label for="latitude"><b>Latitude</b></label>
+                        <input type="number" value="" name="latitude" id="latitude" readonly><br>
+                    </div>
+                    <label for="record_status"><b>Record Status</b></label>
+                    <select name="record_status">
+                        <optgroup label="Record Status">
+                            <option value="under_investigation">Under investigation</option>
+                            <option value="resolved">Resolved</option>
+                            <option value="rejected">Rejected</option>
+                        </optgroup>
+                    </select>
+                    <div class="clearfix">
+                        <button type="button" class="cancelbtn">Cancel</button>
+                        <button type="submit" class="save">Update</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <div class="list" id="listAll" style="overflow-x:auto;">
+            <table>
+                <tr>
+                    <th>S/N</th>
+                    <th>Author</th>
+                    <th>Type</th>
+                    <th>Title</th>
+                    <th>Status</th>
+
+                </tr>
+                <tr onclick="window.location='#';">
+                    <td>1</td>
+                    <td>Ibinabor Johnson</td>
+                    <td>Intervention</td>
+                    <td>Big pothole at Ajah Road</td>
+                    <td>Under investigation</td>
+
+                </tr>
+                <tr onclick="window.location='#';">
+                    <td>2</td>
+                    <td>Lawal Abelson</td>
+                    <td>Red-Flag</td>
+                    <td>Policeman caught collecting bribe</td>
+                    <td>Resolved</td>
+
+                </tr>
+                <tr onclick="window.location='#';">
+                    <td>3</td>
+                    <td>Miyebi Douglas</td>
+                    <td>Red-Flag</td>
+                    <td>Senator J. K. Asodu took bribe</td>
+                    <td>Rejected</td>
+
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="../js/index.js"></script>
+</body>
+
+</html>
