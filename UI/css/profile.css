@@ -32,6 +32,8 @@ button {
 }
 img {
     border-radius: 70%;
+    max-height: 300px;
+    
 }
 a {
     text-decoration: none;

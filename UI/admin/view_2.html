@@ -45,10 +45,18 @@
                     <textarea name="description">Donec id laoreet ligula. Fusce diam augue, aliquet sit amet maximus at, aliquet eget quam. Nunc pretium consequat est, sodales ornare orci. Proin pretium non nisl at euismod. Integer rhoncus ex eu justo venenatis laoreet. In auctor, nibh at placerat congue, ex augue convallis erat, porta malesuada ex justo non eros. Mauris finibus in leo in cursus.</textarea>
                     <div class=" geotag" id="geoInputs">
                         <label for="longitude"><b>Longitude</b></label>
-                        <input type="number" value="" name="longitude" id="longitude" >
+                        <input type="number" value="-77.032000" name="longitude" id="longitude" >
                         <label for="latitude"><b>Latitude</b></label>
-                        <input type="number" value="" name="latitude" id="latitude" >
+                        <input type="number" value="38.889510" name="latitude" id="latitude" >
                     </div>
+                    <label for="record_status"><b>Record Status</b></label>
+                    <select name="record_status">
+                        <optgroup label="Record Status">
+                            <option value="under_investigation">Under investigation</option>
+                            <option value="resolved">Resolved</option>
+                            <option value="rejected">Rejected</option>
+                        </optgroup>
+                    </select>
                     <div class="clearfix">
                         <button type="button" class="cancelbtn">Cancel</button>
                         <button type="submit" class="save">Update</button>
