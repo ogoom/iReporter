@@ -1,4 +1,4 @@
-import IncidentsModel from "../model/IncidentModel";
+/*import IncidentsModel from "../model/IncidentModel";
 
 const Incident = {
   
@@ -53,4 +53,4 @@ const Incident = {
 };
 
 
-export default Incident;
+export default Incident;*/

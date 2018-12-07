@@ -5,14 +5,14 @@ class IncidentsModel {
 	
 	constructor() {
 		this.incidents = [];
-		this.i=0;
+		this.counter=0;
 	}
     
 
 	create(data) {
 		
 		const newIncident = {
-			id: ++this.i,
+			id: ++this.counter,
 			createdOn: new Date().toJSON() || "",
 			createdBy: data.createdBy || 0,
 			type: data.type || "",
@@ -26,11 +26,11 @@ class IncidentsModel {
 		return newIncident;
 	}
 	
-	findOne(id) {
+	getOne(id) {
 		return this.incidents.find(record => record.id === id);
 	}
 	
-	findAll() {
+	getAll() {
 		return this.incidents;
 	}
 	
@@ -39,7 +39,7 @@ class IncidentsModel {
 		const index = this.incidents.indexOf(incident);
 		this.incidents[index].location = data["location"] || this.incident.location;
 		this.incidents[index].comment = data["comment"] || this.incident.comment;
-		return this.reflections[index];
+		return this.incidents[index];
 	}
 	
 	delete(id) {
@@ -48,11 +48,6 @@ class IncidentsModel {
 		this.incidents.splice(index, 1);
 		return {};
 	}
-	id ()  {
-		var i = 0;
-		return function() {
-			return i++;
-		};
-	} 
+	 
 }
 export default new IncidentsModel();

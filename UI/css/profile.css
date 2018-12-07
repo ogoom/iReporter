@@ -68,7 +68,7 @@ ul {
     padding: 12px 16px;
     transform: translate(0%, -50%);
   }
-  .pair:hover {background: #bbb;}
+  
 button:hover, a:hover {
     opacity: 0.7;
 }

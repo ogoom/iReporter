@@ -1,4 +1,5 @@
 const IncidentsModel = require("../model/IncidentModel");
+
 exports.createRecord = function(req, res) {
 	if (!req.body.createdBy && !req.body.type) {
 		// eslint-disable-next-line no-console
@@ -14,12 +15,12 @@ exports.createRecord = function(req, res) {
 //res.json({status: "success", message: "User added successfully!!!", data: null});
 
 exports.getAll = function(req, res) {
-	const incidents = IncidentsModel.findAll;
+	const incidents = IncidentsModel.getAll;
 	return res.status(200).json({status: "success", message: "Record added successfully!!!", data: incidents});
 };
 
 exports.getOne = function(req, res) {
-	const incident = IncidentsModel.findOne(req.params.id);
+	const incident = IncidentsModel.getOne(req.params.id);
 	if (!incident) {
 		return res.status(404).send({"message": "Report not found3"});
 	}
