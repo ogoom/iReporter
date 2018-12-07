@@ -92,7 +92,7 @@ th, td {
     padding: 8px;
 }
 
-tr:nth-child(even){background-color: #e2bfbf}
+tr:nth-child(even){background-color: #adceb4}
 @media screen and (max-width: 600px) {
     .container {
         width: 100%;
