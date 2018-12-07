@@ -4,7 +4,9 @@
   "description": "iReporter is an application that  enables",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel server.js --out-dir build",
+    "dev-start": "babel-watch server.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,14 @@
   "bugs": {
     "url": "https://github.com/ogoom/iReporter/issues"
   },
-  "homepage": "https://github.com/ogoom/iReporter#readme"
+  "homepage": "https://github.com/ogoom/iReporter#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-watch": "^2.0.7"
+  }
 }
